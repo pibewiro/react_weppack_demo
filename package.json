@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack server",
-    "start": "cross-env NODE_ENV=production webpack"
+    "start": "cross-env NODE_ENV=production webpack && node server.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
