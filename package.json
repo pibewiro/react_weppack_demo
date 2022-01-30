@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack server",
-    "build": "cross-env NODE_ENV=production webpack && node server.js",
-    "heroku-postbuild": "webpack -p"
+    "build": "cross-env NODE_ENV=production webpack --mode production && node server.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
