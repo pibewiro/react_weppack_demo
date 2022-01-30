@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "make": "Honda",
+    "model": "Accord",
+    "price": 14000,
+    "year": "2015"
+  },
+  {
+    "id": 2,
+    "make": "Ford",
+    "model": "Explorer",
+    "price": 21000,
+    "year": "2017"
+  }
+]

@@ -1,0 +1,9 @@
+@import "./variables.scss";
+@import "./global.scss";
+
+//components
+@import "../components/Header/index.scss";
+@import "../components/Card/index.scss";
+
+//pages
+@import "../pages/Cars/index.scss";
