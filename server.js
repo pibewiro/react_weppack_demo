@@ -6,5 +6,5 @@ app.use("/", express.static(resolve(__dirname, "./dist")));
 
 app.listen(process.env.PORT || 3000, (err) => {
   if (err) return console.log(err);
-  console.log("Running...");
+  console.log("Running...", process.env.NODE_ENV);
 });
