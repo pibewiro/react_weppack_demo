@@ -5,8 +5,8 @@ const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin"
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  mode: isDevelopment ? "development" : "production",
-  devtool: isDevelopment ? "eval-source-map" : "source-map",
+  mode: "production",
+  devtool: "source-map",
   entry: path.resolve(__dirname, "src", "index.tsx"),
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -19,7 +19,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html"),
     }),
-    isDevelopment && new ReactRefreshWebpackPlugin(),
   ].filter(Boolean),
   devServer: {
     port: 3000,
@@ -35,11 +34,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: {
-            plugins: [
-              isDevelopment && require.resolve("react-refresh/babel"),
-            ].filter(Boolean),
-          },
         },
       },
       {
