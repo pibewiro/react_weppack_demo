@@ -7,7 +7,9 @@
     "dev": "webpack server",
     "start": "cross-env NODE_ENV=production webpack && node server.js"
   },
-  "devDependencies": {
+  "dependencies": {
+    "express": "^4.17.2",
+    "webpack-cli": "^4.9.2",
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
@@ -29,10 +31,5 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.67.0",
     "webpack-dev-server": "^4.7.3"
-  },
-  "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
-  "dependencies": {
-    "express": "^4.17.2",
-    "webpack-cli": "^4.9.2"
   }
 }
